@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +10,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#FFF5EE;
+    background-color:#D9C6B0;
     color: #333;
     height: 100%;
 }
 
 header {
-    background-color: #D2B48C;
-    color: #fff;
+
+    background-color: #D9C6B0;
+    color: #000000;
     padding: 10px 0;
     text-align: center;
     
@@ -24,13 +26,15 @@ header {
 
 header h1 {
     margin: 0;
-    font-family: serif;
+    font-family: "poppins";
+    font-weight: 400;
    
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+
 }
 
 nav ul li {
@@ -39,37 +43,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Efeito suave */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    font-size: 22px; /* Aumenta o tamanho ao passar o mouse */
+    color: #554034; /* Muda a cor ao passar o mouse */
 }
 
 main {
     min-height: 100vh;
-    padding: 20px;
-}
-
-.hero {
-    text-align: center;
     
 }
-.hero h2{
-    font-family: serif;
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 80px;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.973); 
-}
-.hero p{
-    font-family: serif;
-   position: absolute;
-   top: 55%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 20px;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.918); 
-}
+
+
 
 
 .services {
@@ -161,4 +155,13 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #ff6f61; /* Cor ao passar o mouse */
     transition: color 0.3 ease;
+}
+
+.imginicial img {
+    width: 100%; /* Define a largura desejada */
+    height: 700%; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    object-fit: cover;
+    
 }
